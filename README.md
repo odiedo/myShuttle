@@ -20,5 +20,5 @@ Welcome to myShuttle Vehicle Booking/Reservations Service! This web application 
 ## Contributing
 I welcome contributions from the community. Feel free to open issues, submit pull requests, and help improve this project. 
 
-Contact
+## Contact
 If you have questions or need assistance, feel free to contact us at odiedopaul@gmail.com.
