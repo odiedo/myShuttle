@@ -1,0 +1,619 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #09030C;
+}
+#main {
+    background-color: rgba(0, 0, 0, .9);
+    width: 100wh;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 1900px) {
+    /************************************************
+    |----- Login and Registration Page--------------|
+    *************************************************/
+    #reg {
+        display: none;
+        width: 100hw;
+        height: 95vh;
+        max-width: 350px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0,.1);
+        text-align: center;
+        color: white;
+        line-height: normal;
+    }
+    #login {
+        width: 100hw;
+        height: 100vh;
+    }
+    #login .container {
+        max-width: 450px;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0,.1);
+        text-align: center;
+        color: white;
+        line-height: normal;
+        padding: 15px;
+        border-top: 2px solid white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #login .login-header h2 {
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        text-align: center;
+        font-size: 27px;
+        padding: 5px;
+        font-weight: 900;
+        font-family: cursive;
+    }
+    #login .login-header h2 i {
+        font-size: 48px;
+    }
+    #reg .reg-header h2 {
+        padding-top: 20px;
+    }
+    #reg .reg-header h2 i {
+        display: block;
+        font-family: cursive;
+        font-weight: 900;
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        font-style: normal;
+        font-size: 18px;
+    }
+    #login .inputs {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        padding: 4px;
+        background-color: #2a073b;
+        border-radius: 15px;
+    }
+    #login .inputs i {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+    #reg .inputs {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        padding: 5px;
+        background-color: #2a073b;
+        border-radius: 10px;
+    }
+    #reg .inputs i {
+        color: white;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        text-decoration: none;
+    }
+    #reg .inputs input[type="text"],
+    #reg .inputs input[type="email"],
+    #reg .inputs input[type="tel"],
+    #reg .inputs input[type="password"] {
+        width: 85%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    #login .inputs input[type="tel"],
+    #login .inputs input[type="password"],
+    #reg .inputs input[type="text"],
+    #reg .inputs input[type="email"],
+    #reg .inputs input[type="tel"],
+    #reg .inputs input[type="password"] {
+        width: 80%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    #login .inputs:hover,
+    #reg .inputs:hover{
+        box-shadow: 0 1px 3px 0px rgb(159, 130, 187);
+        background-color: #0e0811;
+    }
+    #login form,
+    #reg form {
+        text-align: left;
+    }
+    #login label,
+    #reg label {
+        padding-left: 10px;
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        font-weight: 900;
+    }
+    #login button,
+    #reg button {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        padding: 5px;
+        margin: auto;
+        border-radius: 10px;
+        border: 1px solid #3b0857;
+        font-weight: 900;
+        background-color: #0b0111;
+        color: #a57cbb;
+    }
+    #login button:hover,
+    #reg button:hover {
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        border: 1px solid white;
+        box-shadow: 0 2px 4px 0px blueviolet;
+    }
+
+    #login .login-msg,
+    #reg .reg-msg {
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+    #login .msg,
+    #reg .msg {
+        color: grey;
+        bottom: 0;
+    }
+    #login .log_forgot,
+    #reg .reg_forgot {
+        display: flex;
+        justify-content: space-between;
+    }
+    #login .log_forgot a,
+    #reg .reg_forgot a {
+        text-decoration: none;
+    }
+    #login .log_forgot a:hover,
+    #reg .reg_forgot a:hover {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+    }
+    #login hr,
+    #reg hr {
+        background-color: grey;
+        margin-bottom: 20px;
+    }
+
+
+    /************************************************
+    |----- Index Page After Login-------------------|
+    *************************************************/
+    #booking {
+        background-color: transparent;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    #booking .container {
+        width: 60%;
+        min-height: 70vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #050007;
+        padding: 10px;
+        line-height: normal;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0 2px 2px 0px rgb(6, 71, 71);
+    }
+    #booking .container .booking-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #0b0111;
+        border-top-right-radius: 26px;
+        border-bottom-right-radius: 26px;
+        padding-right: 10px;
+        border: 1px solid white;
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        line-height: normal;
+        margin: 0;
+        width: 95%;
+    }
+    #booking .booking-header h2 {
+        font-size: 18px;
+        font-family: cursive;
+        padding-left: 14px;
+        text-align: center;
+    }
+    #booking .booking-header h6 {
+        text-align: center;
+        font-size: 12px;
+        padding-right: 4px;
+    }
+    #booking .booking-header h2 i {
+        font-size: 18px;
+    }
+    #booking .marq i{
+        padding-top: 5px;
+        padding-bottom: 3px;
+        margin: 0;
+        font-size: 24px;
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        padding-left: 20px;
+    } 
+    #booking .marq marquee {
+        padding-top: 5px;
+        padding-bottom: 0;
+        margin: 0;
+        font-size: 14px;
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        width: 90%;
+        line-height: normal;
+    } 
+    #booking .booking-body {
+        width: 100%;
+        background-color: rgb(6, 71, 71);
+        border-top-left-radius: 26px;
+        border-bottom-left-radius: 26px;
+        outline: 1px solid blueviolet;
+        padding: 3px;
+    }
+    #booking .booking-body .booking-menu {
+        width: 70%;
+        margin: auto;
+    }
+    #booking .booking-body ul {
+        width: 100%;
+    }
+    #booking .booking-body ul li {
+        width: 20%;
+        margin: 2px;
+        margin-top: 10px;
+        display: inline-flex;
+        justify-content: space-around;
+        font-weight: 900;
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        border-radius: 4px;
+        background-color: #0b0111;
+        padding: 10px;
+        transition: 1s;
+    }
+    #booking .booking-body ul li:hover {
+        cursor: pointer;
+        color: white;
+        text-shadow: 0 0 10px rgb(78, 23, 17);
+        outline: 1px solid white;
+        box-shadow: 0 2px 4px 0px blueviolet;
+        transform: scale(1.1);
+    }
+    #booking .book,
+    #booking .route-available {
+        height: 50vh;
+        width: 70%;
+        margin: auto;
+        padding: 0;
+        padding-bottom: 15px;
+        font-weight: 900;
+        color: white;
+    }
+    #booking .book p,
+    #booking .route-available p {
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 900;
+        padding: 4px;
+        width: 80%;
+        margin: auto;
+        border: 1px solid rgb(10, 2, 1);
+        border-left: 10px solid #09030C;
+    }
+    #booking .book-sec {
+        width: 100%;
+        padding: 5px;
+    }
+    #booking .book-sec label {
+        display: block;
+        padding-left: 12px;
+        font-size: 26px;
+        text-shadow: 0 0 10px salmon;
+    }
+    #booking .book-sec select {
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding: 8px;
+        cursor: context-menu;
+        padding-right: 10px;
+        font-size: 17px;
+        outline: navajowhite;
+        text-align: center;
+        font-weight: 900;
+        border-radius: 5px;
+        box-shadow: 0 2px 3px 0px #09030C;
+    }
+    #booking .sub1 {
+        width: 100%;
+    }
+    #booking .sub1 button {
+        display: block;
+        width: 35%;
+        margin: auto;
+        margin-top: 18px;
+        padding: 7px;
+        font-size: 26px;
+        border: 1px solid #3b0857;
+        color: white;
+        background: #0b0111;
+        border-radius: 10px;        
+        text-shadow: 0  0 10px blueviolet;
+        outline: none;
+        transition: 1s;
+    }
+    #booking .sub1 button:hover {
+        border: 1px solid white;
+        box-shadow: 0 2px 4px 0px blueviolet;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    #booking .route-available table {
+        width: 100%;
+        min-width: 100hw;
+        overflow: scroll;
+        text-align: center;
+        border: none;
+    }
+    #booking .route-available table thead{
+        background-color: #0b0111;
+        color: white;
+        font-size: 18px;
+        border: 2px solid white;
+    }
+    #booking .route-available table thead tr td {
+        padding: 10px;
+    }
+    #booking .route-available table tbody tr td {
+        padding: 5px;
+        outline: none;
+    }     
+    #booking .route-available table tbody tr:nth-child(even) {
+        background-color: rgb(56, 36, 5);
+    }
+    /* booking search results*/
+    #bookBox {
+        display: none;
+        position: relative;
+        width: 60%;
+        height: 200px;
+        margin: auto;
+        padding: 10px;
+        background-color: rgba(0,0,0,.3);
+        box-shadow: 0px 2px 4px 0px #000;
+        border-radius: 3px;
+    }
+    #bookBox .search-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-weight: 900;
+        color: white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px dashed white;
+        padding-bottom: 5px;
+        text-shadow: 0 0 8px blueviolet;
+        font-size: 20px;
+        font-family: cursive;
+    }
+    #bookBox .search-header i {
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        text-shadow: 0 0 8px blueviolet;
+    }
+    #bookBox .search-header i:hover {
+        cursor: pointer;
+        color: white;
+        text-shadow: 0 0 8px red;
+        transform: scale(1.1);
+    }
+    #bookBox .route {
+        text-align: center;
+        color: rgb(83, 174, 226);
+        font-weight: 900;
+        padding: 10px;
+        text-transform:capitalize;
+        border-bottom: 2px dashed white;
+        padding-bottom: 5px;
+    }
+    #bookBox .route span {
+        color: rgb(255, 0, 85);
+    }
+    #bookBox .vehicleRes {
+        display: flex;
+        justify-content: space-between;
+    }
+    #bookBox .vehicleRes span:nth-child(even){
+        color: aquamarine;
+    }
+    #bookBox .sub1 {
+        width: 100%;
+    }
+    #bookBox .sub1 button {
+        display: block;
+        width: 35%;
+        margin: auto;
+        margin-top: 10px;
+        padding: 3px;
+        font-size: 16px;
+        border: 1px solid #3b0857;
+        color: white;
+        background: #0b0111;
+        border-radius: 10px;        
+        text-shadow: 0  0 10px blueviolet;
+        outline: none;
+        transition: 1s;
+    }
+    #bookBox .sub1 button:hover {
+        border: 1px solid white;
+        box-shadow: 0 2px 4px 0px blueviolet;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+    #bookBox table {
+        width: 100%;
+        text-align: center;
+        color: blue;
+        
+        font-weight: 900;
+        font-size: 14px;
+    }
+    #bookBox table .t-header{
+        width: 100%;
+        text-align: center;
+        font-weight: 900;
+        font-size: 16px;
+        color: white;
+        text-shadow: blueviolet;
+    }
+}
+@media screen and (max-width: 600px) {
+    #reg {
+        width: 100%;
+        max-width: 400px;
+        height: 90vh;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        line-height: normal;
+        box-shadow: none;
+        border: none;
+    }
+    #reg .container {
+        width: 100%;
+        height: 100%;
+    }
+    #reg .reg-header h2 i {
+        display: block;
+        font-family: cursive;
+        font-weight: 900;
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        font-style: normal;
+        font-size: 22px;
+    }
+    #reg .inputs {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        padding: 5px;
+        background-color: #2a073b;
+        border-radius: 10px;
+    }
+    #reg .inputs i {
+        color: white;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        text-decoration: none;
+    }
+    #reg .inputs input[type="text"],
+    #reg .inputs input[type="email"],
+    #reg .inputs input[type="tel"],
+    #reg .inputs input[type="password"] {
+        width: 85%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    #login .container {
+        border: none;
+        box-shadow: none;
+    }
+    #login .login-header h2 {
+        font-size: 34px;
+        padding: 3px;
+    }
+    #login .login-header h2 i {
+        font-size: 40px;
+    }
+    #login .inputs {
+        width: 100%;
+        padding: 10px;
+    }
+    #login .inputs i {
+        color: white;
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #reg {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    #reg .reg-header h2 i {
+        display: block;
+        font-family: cursive;
+        font-weight: 900;
+        color: white;
+        text-shadow: 0 0 10px blueviolet;
+        font-style: normal;
+        font-size: 16px;
+    }
+    #reg .inputs {
+        font-size: 12px;
+    }
+    #login {
+        width: 100%;
+        height: 80vh;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+    #login .login-header h2 {
+        font-size: 24px;
+        padding: 2px;
+    }
+    #login .login-header h2 i {
+        font-size: 40px;
+    }
+    #login .inputs {
+        width: 100%;
+        padding: 10px;
+    }
+    #login .inputs i {
+        color: white;
+        padding: 5px;
+    }
+}
